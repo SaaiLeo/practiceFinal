@@ -10,6 +10,7 @@ import Alamofire
 
 var CATEGORY: [Category] = []
 var MENU: [Menu] = []
+var CART: [CartItem] = []
 
 class HomePageViewController: UIViewController {
     
@@ -40,7 +41,7 @@ class HomePageViewController: UIViewController {
     }
     
     private func fetchMenu() {
-        AF.request("").responseDecodable(of: MenuList.self) { data in
+        AF.request("https://raw.githubusercontent.com/SaaiLeo/practiceFinal/refs/heads/main/practiceFinal/Models/Menus.json").responseDecodable(of: MenuList.self) { data in
             switch data.result {
             case .success(let menulist):
                 MENU = menulist.menus

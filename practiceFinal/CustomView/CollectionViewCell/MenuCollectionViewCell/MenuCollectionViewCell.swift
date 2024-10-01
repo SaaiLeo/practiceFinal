@@ -22,7 +22,7 @@ class MenuCollectionViewCell: UICollectionViewCell {
     func setup(_ menu: Menu) {
         menuImageView.image = UIImage(named: menu.image)
         menuNameLabel.text = menu.name
-        menuPriceLabel.text =  menu.price
+        menuPriceLabel.text =  "THB \(menu.price)"
     }
 
 }

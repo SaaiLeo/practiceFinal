@@ -23,6 +23,8 @@
 		B36697332CAC40DA002F0683 /* MenuList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36697322CAC40DA002F0683 /* MenuList.swift */; };
 		B36697352CAC413E002F0683 /* Menus.json in Resources */ = {isa = PBXBuildFile; fileRef = B36697342CAC413E002F0683 /* Menus.json */; };
 		B36697372CAC42AB002F0683 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36697362CAC42AB002F0683 /* MenuViewController.swift */; };
+		B36697392CAC4D8D002F0683 /* MenuDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36697382CAC4D8D002F0683 /* MenuDetailViewController.swift */; };
+		B366973B2CAC4FCF002F0683 /* CartItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B366973A2CAC4FCF002F0683 /* CartItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,8 @@
 		B36697322CAC40DA002F0683 /* MenuList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuList.swift; sourceTree = "<group>"; };
 		B36697342CAC413E002F0683 /* Menus.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Menus.json; sourceTree = "<group>"; };
 		B36697362CAC42AB002F0683 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		B36697382CAC4D8D002F0683 /* MenuDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuDetailViewController.swift; sourceTree = "<group>"; };
+		B366973A2CAC4FCF002F0683 /* CartItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,7 @@
 			children = (
 				B366971C2CABFEB6002F0683 /* HomePageViewController.swift */,
 				B36697362CAC42AB002F0683 /* MenuViewController.swift */,
+				B36697382CAC4D8D002F0683 /* MenuDetailViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -122,6 +127,7 @@
 				B366972A2CAC198F002F0683 /* Categories.json */,
 				B36697322CAC40DA002F0683 /* MenuList.swift */,
 				B36697342CAC413E002F0683 /* Menus.json */,
+				B366973A2CAC4FCF002F0683 /* CartItem.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -228,10 +234,12 @@
 				B36697222CAC03C3002F0683 /* CategoryCollectionViewCell.swift in Sources */,
 				B36697262CAC0563002F0683 /* Category.swift in Sources */,
 				B36697082CABFE76002F0683 /* AppDelegate.swift in Sources */,
+				B36697392CAC4D8D002F0683 /* MenuDetailViewController.swift in Sources */,
 				B366970A2CABFE76002F0683 /* SceneDelegate.swift in Sources */,
 				B366971D2CABFEB6002F0683 /* HomePageViewController.swift in Sources */,
 				B36697302CAC28C7002F0683 /* MenuCollectionViewCell.swift in Sources */,
 				B36697332CAC40DA002F0683 /* MenuList.swift in Sources */,
+				B366973B2CAC4FCF002F0683 /* CartItem.swift in Sources */,
 				B36697372CAC42AB002F0683 /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

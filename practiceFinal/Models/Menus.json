@@ -2,28 +2,33 @@
   "menus": [
     {
       "name": "Coffee Ninetail",
-      "image": "coffee_ninetail",
-      "price": "100"
+      "image": "coffee_ninetails",
+      "price": "100",
+      "category": "coffee"
     },
     {
       "name": "Icecream Pikachu",
       "image": "icecream_pikachu",
-      "price": "50"
+      "price": "50",
+      "category": "icecream"
     },
     {
       "name": "Meal Mimikyu",
       "image": "meal_mimikyu",
-      "price": "130"
+      "price": "130",
+      "category": "meal"
     },
     {
       "name": "Cake Crustle",
       "image": "cake_crustle",
-      "price": "75"
+      "price": "75",
+      "category": "cake"
     },
     {
       "name": "Drink Pikachu",
       "image": "drink_pikachu",
-      "price": "35"
+      "price": "35",
+      "category": "drink"
     }
   ]
 }

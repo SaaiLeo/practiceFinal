@@ -12,26 +12,30 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MenuCollectionViewCell" id="gTV-IL-0wX" customClass="MenuCollectionViewCell" customModule="practiceFinal" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="150" height="204"/>
+            <rect key="frame" x="0.0" y="0.0" width="150" height="208"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="150" height="204"/>
+                <rect key="frame" x="0.0" y="0.0" width="150" height="208"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="42i-CL-dwS">
-                        <rect key="frame" x="0.0" y="0.0" width="150" height="204"/>
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="208"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="70D-I7-2YQ">
-                                <rect key="frame" x="0.0" y="0.0" width="150" height="146"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="70D-I7-2YQ">
+                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="fyE-F4-1b3"/>
+                                    <constraint firstAttribute="height" constant="150" id="z2W-7V-ffr"/>
+                                </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XEf-hh-KL3">
-                                <rect key="frame" x="8" y="154" width="134" height="21"/>
+                                <rect key="frame" x="8" y="158" width="134" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="price" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="340-u5-8X3">
-                                <rect key="frame" x="8" y="179" width="134" height="17"/>
+                                <rect key="frame" x="8" y="183" width="134" height="17"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
                                 <color key="textColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -60,13 +64,13 @@
                 <constraint firstAttribute="trailing" secondItem="42i-CL-dwS" secondAttribute="trailing" id="cFX-KT-Dvn"/>
                 <constraint firstAttribute="bottom" secondItem="42i-CL-dwS" secondAttribute="bottom" id="gPP-Rb-gtU"/>
             </constraints>
-            <size key="customSize" width="195" height="228"/>
+            <size key="customSize" width="195" height="232"/>
             <connections>
                 <outlet property="menuImageView" destination="70D-I7-2YQ" id="wsl-v8-SV3"/>
                 <outlet property="menuNameLabel" destination="XEf-hh-KL3" id="49z-mc-VP4"/>
                 <outlet property="menuPriceLabel" destination="340-u5-8X3" id="wCE-RV-gqd"/>
             </connections>
-            <point key="canvasLocation" x="67.175572519083971" y="51.408450704225352"/>
+            <point key="canvasLocation" x="67.175572519083971" y="52.816901408450704"/>
         </collectionViewCell>
     </objects>
     <resources>

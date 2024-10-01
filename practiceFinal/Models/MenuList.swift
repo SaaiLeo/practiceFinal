@@ -11,6 +11,7 @@ struct Menu: Codable {
     let name: String
     let image: String
     let price: String
+    let category: String
 }
 
 struct MenuList: Codable {

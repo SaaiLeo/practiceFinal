@@ -34,5 +34,16 @@ extension MenuViewController: UICollectionViewDataSource, UICollectionViewDelega
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let scene = storyboard?.instantiateViewController(withIdentifier: MenuDetailViewController.identifier) as! MenuDetailViewController
+        
+        scene.menu = MENU[indexPath.row]
+        
+        scene.modalTransitionStyle = .crossDissolve
+        present(scene, animated: true, completion: nil)
+    }
+    
+    
+    
     
 }
