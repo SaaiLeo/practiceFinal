@@ -9,21 +9,28 @@
 /* Begin PBXBuildFile section */
 		B36697082CABFE76002F0683 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36697072CABFE76002F0683 /* AppDelegate.swift */; };
 		B366970A2CABFE76002F0683 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36697092CABFE76002F0683 /* SceneDelegate.swift */; };
-		B366970C2CABFE76002F0683 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B366970B2CABFE76002F0683 /* ViewController.swift */; };
 		B366970F2CABFE76002F0683 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = B366970E2CABFE76002F0683 /* Base */; };
 		B36697112CABFE78002F0683 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B36697102CABFE78002F0683 /* Assets.xcassets */; };
 		B36697142CABFE78002F0683 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = B36697132CABFE78002F0683 /* Base */; };
+		B366971D2CABFEB6002F0683 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B366971C2CABFEB6002F0683 /* HomePageViewController.swift */; };
+		B36697222CAC03C3002F0683 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36697202CAC03C3002F0683 /* CategoryCollectionViewCell.swift */; };
+		B36697232CAC03C3002F0683 /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B36697212CAC03C3002F0683 /* CategoryCollectionViewCell.xib */; };
+		B36697262CAC0563002F0683 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = B36697252CAC0563002F0683 /* Category.swift */; };
+		B36697292CAC0837002F0683 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B36697282CAC0837002F0683 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B36697042CABFE76002F0683 /* practiceFinal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = practiceFinal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B36697072CABFE76002F0683 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B36697092CABFE76002F0683 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B366970B2CABFE76002F0683 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B366970E2CABFE76002F0683 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B36697102CABFE78002F0683 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B36697132CABFE78002F0683 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B36697152CABFE78002F0683 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B366971C2CABFEB6002F0683 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		B36697202CAC03C3002F0683 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		B36697212CAC03C3002F0683 /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		B36697252CAC0563002F0683 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B36697292CAC0837002F0683 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +64,50 @@
 		B36697062CABFE76002F0683 /* practiceFinal */ = {
 			isa = PBXGroup;
 			children = (
+				B36697242CAC0554002F0683 /* Models */,
+				B366971E2CAC0385002F0683 /* CustomView */,
+				B366971B2CABFEA3002F0683 /* Views */,
 				B36697072CABFE76002F0683 /* AppDelegate.swift */,
 				B36697092CABFE76002F0683 /* SceneDelegate.swift */,
-				B366970B2CABFE76002F0683 /* ViewController.swift */,
 				B366970D2CABFE76002F0683 /* Main.storyboard */,
 				B36697102CABFE78002F0683 /* Assets.xcassets */,
 				B36697122CABFE78002F0683 /* LaunchScreen.storyboard */,
 				B36697152CABFE78002F0683 /* Info.plist */,
 			);
 			path = practiceFinal;
+			sourceTree = "<group>";
+		};
+		B366971B2CABFEA3002F0683 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B366971C2CABFEB6002F0683 /* HomePageViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B366971E2CAC0385002F0683 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				B366971F2CAC038E002F0683 /* CollectionViewCell */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		B366971F2CAC038E002F0683 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				B36697202CAC03C3002F0683 /* CategoryCollectionViewCell.swift */,
+				B36697212CAC03C3002F0683 /* CategoryCollectionViewCell.xib */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		B36697242CAC0554002F0683 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B36697252CAC0563002F0683 /* Category.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +126,9 @@
 			dependencies = (
 			);
 			name = practiceFinal;
+			packageProductDependencies = (
+				B36697282CAC0837002F0683 /* Alamofire */,
+			);
 			productName = practiceFinal;
 			productReference = B36697042CABFE76002F0683 /* practiceFinal.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +157,9 @@
 				Base,
 			);
 			mainGroup = B36696FB2CABFE76002F0683;
+			packageReferences = (
+				B36697272CAC0837002F0683 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = B36697052CABFE76002F0683 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,6 +174,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B36697232CAC03C3002F0683 /* CategoryCollectionViewCell.xib in Resources */,
 				B36697112CABFE78002F0683 /* Assets.xcassets in Resources */,
 				B36697142CABFE78002F0683 /* Base in Resources */,
 				B366970F2CABFE76002F0683 /* Base in Resources */,
@@ -138,9 +188,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B366970C2CABFE76002F0683 /* ViewController.swift in Sources */,
+				B36697222CAC03C3002F0683 /* CategoryCollectionViewCell.swift in Sources */,
+				B36697262CAC0563002F0683 /* Category.swift in Sources */,
 				B36697082CABFE76002F0683 /* AppDelegate.swift in Sources */,
 				B366970A2CABFE76002F0683 /* SceneDelegate.swift in Sources */,
+				B366971D2CABFEB6002F0683 /* HomePageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +351,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -326,6 +379,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -361,6 +415,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B36697272CAC0837002F0683 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B36697282CAC0837002F0683 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B36697272CAC0837002F0683 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B36696FC2CABFE76002F0683 /* Project object */;
 }
