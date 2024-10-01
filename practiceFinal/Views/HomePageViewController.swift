@@ -9,6 +9,7 @@ import UIKit
 import Alamofire
 
 var CATEGORY: [Category] = []
+var MENU: [Menu] = []
 
 class HomePageViewController: UIViewController {
     
@@ -18,12 +19,12 @@ class HomePageViewController: UIViewController {
         super.viewDidLoad()
         
         registerCell()
-        print(CATEGORY)
 
     }
     
     override func viewWillAppear(_ animated: Bool) {
         fetchCategory()
+        fetchMenu()
     }
     
     private func fetchCategory() {
@@ -33,7 +34,18 @@ class HomePageViewController: UIViewController {
                 CATEGORY = success.categories
                 self.updateUI()
             case .failure(let error):
-                print(error)
+                print("fetching category error:",error)
+            }
+        }
+    }
+    
+    private func fetchMenu() {
+        AF.request("").responseDecodable(of: MenuList.self) { data in
+            switch data.result {
+            case .success(let menulist):
+                MENU = menulist.menus
+            case .failure(let error):
+                print("fetching Menu error:", error)
             }
         }
     }
