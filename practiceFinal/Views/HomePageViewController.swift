@@ -16,18 +16,30 @@ class HomePageViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        registerCell()
+        print(CATEGORY)
 
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        AF.request("file").responseDecodable(of: CategoryList.self) { data in
+        fetchCategory()
+    }
+    
+    private func fetchCategory() {
+        AF.request("https://raw.githubusercontent.com/SaaiLeo/practiceFinal/refs/heads/main/practiceFinal/Models/Categories.json").responseDecodable(of: CategoryList.self) { data in
             switch data.result {
             case .success(let success):
                 CATEGORY = success.categories
+                self.updateUI()
             case .failure(let error):
                 print(error)
             }
         }
+    }
+    
+    private func updateUI() {
+        categoryCollectionView.reloadData()
     }
     
 

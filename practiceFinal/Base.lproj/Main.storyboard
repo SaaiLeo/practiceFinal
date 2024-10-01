@@ -21,19 +21,19 @@
                                 <rect key="frame" x="0.0" y="103" width="393" height="825"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nV9-HZ-YsJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="840"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="805"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dmV-uv-Zez">
-                                                <rect key="frame" x="0.0" y="0.0" width="393" height="840"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="805"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2as-g8-LxF">
-                                                        <rect key="frame" x="0.0" y="0.0" width="393" height="168"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="393" height="133"/>
                                                         <subviews>
                                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="cCs-MV-vn6">
-                                                                <rect key="frame" x="8" y="40" width="377" height="120"/>
+                                                                <rect key="frame" x="8" y="40" width="377" height="85"/>
                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="height" constant="120" id="NGp-DU-nbk"/>
+                                                                    <constraint firstAttribute="height" constant="85" id="NGp-DU-nbk"/>
                                                                 </constraints>
                                                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Uhz-51-NxG">
                                                                     <size key="itemSize" width="128" height="128"/>
@@ -71,7 +71,7 @@
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PC1-HS-vBG">
-                                                        <rect key="frame" x="0.0" y="168" width="393" height="168"/>
+                                                        <rect key="frame" x="0.0" y="133" width="393" height="168"/>
                                                         <subviews>
                                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="IJ9-2u-avu">
                                                                 <rect key="frame" x="8" y="40" width="377" height="120"/>
@@ -111,7 +111,7 @@
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gKA-HE-vBd">
-                                                        <rect key="frame" x="0.0" y="336" width="393" height="168"/>
+                                                        <rect key="frame" x="0.0" y="301" width="393" height="168"/>
                                                         <subviews>
                                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3zu-3F-iQY">
                                                                 <rect key="frame" x="8" y="40" width="377" height="120"/>
@@ -151,7 +151,7 @@
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A3r-9d-7YP">
-                                                        <rect key="frame" x="0.0" y="504" width="393" height="168"/>
+                                                        <rect key="frame" x="0.0" y="469" width="393" height="168"/>
                                                         <subviews>
                                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="UH0-bd-Bms">
                                                                 <rect key="frame" x="8" y="40" width="377" height="120"/>
@@ -191,7 +191,7 @@
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZR0-n4-MDY">
-                                                        <rect key="frame" x="0.0" y="672" width="393" height="168"/>
+                                                        <rect key="frame" x="0.0" y="637" width="393" height="168"/>
                                                         <subviews>
                                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ZDZ-wh-gZd">
                                                                 <rect key="frame" x="8" y="40" width="377" height="120"/>
@@ -270,7 +270,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1982.4427480916029" y="23.943661971830988"/>
+            <point key="canvasLocation" x="1982.4427480916029" y="23.591549295774648"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="0Fp-SM-yeK">

@@ -8,8 +8,8 @@
 import Foundation
 
 struct Category: Codable {
-    let image: String
     let name: String
+    let image: String
 }
 
 struct CategoryList: Codable {
