@@ -1,0 +1,25 @@
+
+{
+  "categories": [
+    {
+      "name": "Cake",
+      "image": "category_cake"
+    },
+    {
+      "name": "Coffee",
+      "image": "category_coffee"
+    },
+    {
+      "name": "Ice Cream",
+      "image": "category_icecream"
+    },
+    {
+      "name": "Drink",
+      "image": "category_drink"
+    },
+    {
+      "name": "meal",
+      "image": "category_meal"
+    }
+  ]
+}
